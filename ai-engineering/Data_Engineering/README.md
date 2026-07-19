@@ -351,39 +351,7 @@ MINI SPARK DEMO - WordCount
 python mini_spark.py
 ```
 
----
 
-## 🎓 Öğrenme Sırası
-
-### 1️⃣ **Başlangıç Seviye**
-```bash
-python ai-engineering/Data_Engineering/bigdata/mini_dfs.py
-```
-- HDFS mimarisini anla
-- Block replication ve fault tolerance öğren
-
-### 2️⃣ **Orta Seviye**
-```bash
-python ai-engineering/Data_Engineering/bigdata/mini_yarn.py
-```
-- Kaynak yönetimini anla
-- Container ve scheduling kavramlarını öğren
-
-### 3️⃣ **İleri Seviye**
-```bash
-python ai-engineering/Data_Engineering/bigdata/mini_spark.py
-```
-- RDD ve transformations öğren
-- DAG ve lazy evaluation anla
-
-### 4️⃣ **Uygulama: Orchestration**
-```bash
-python ai-engineering/Data_Engineering/airflow/etl_airflow_pipeline.py
-```
-- ETL pipeline tasarımını anla
-- Airflow DAG ve task yönetimini öğren
-
----
 
 ## 📊 Bileşen Karşılaştırması
 
@@ -431,27 +399,6 @@ python ai-engineering/Data_Engineering/airflow/etl_airflow_pipeline.py
    └───────────────┘
 ```
 
----
 
-## 📚 Kaynaklar
-
-- **Apache Hadoop Documentation**: https://hadoop.apache.org/docs/
-- **Apache Spark Documentation**: https://spark.apache.org/docs/
-- **Apache Airflow Documentation**: https://airflow.apache.org/docs/
-- **Big Data Fundamentals**: MapReduce, HDFS, YARN architecture
-
----
-
-## 📝 Not
-
-Bu simülasyonlar eğitim amaçlıdır. Gerçek üretim ortamlarında:
-- Proper error handling ve logging kullanın
-- Distributed systems için proven frameworks'ü kullanın
-- Cluster orchestration (Kubernetes) düşünün
-- Security ve monitoring ekleyin
-
----
 
 **Geliştirici**: Sevval-345  
-**Son Güncelleme**: 2024  
-**Versiyon**: 1.0.0
