@@ -1,51 +1,172 @@
-# Sentiment-Dashboard
+<div align="center">
 
-Sentiment-Dashboard, metin tabanlı verilerin duygusal tonunu (pozitif, negatif, nötr) belirlemek, verileri görselleştirmek ve kullanıcı etkileşimini analiz etmek için geliştirilmiş kapsamlı bir **React** uygulamasıdır.
+# 📊 Sentiment Dashboard
 
-## 🧠 Projenin Amacı
-Bu uygulama, büyük veri setlerini veya kullanıcı yorumlarını saniyeler içinde işleyerek anlamlı veriye dönüştürür. Kullanıcılar bir metin girdisi sağladığında, arka planda çalışan algoritmalar sayesinde metnin duygusal ağırlığı hesaplanır ve bu sonuçlar dinamik kartlar, istatistik çubukları ve grafiklerle kullanıcıya sunulur.
+### Gerçek Zamanlı Duygu Analizi ve Veri Görselleştirme Platformu
 
-## 🛠 Kullanılan Teknolojiler
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
+![NLTK](https://img.shields.io/badge/NLTK-154F3B?style=for-the-badge)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
+![Plotly](https://img.shields.io/badge/Plotly-3F4F75?style=for-the-badge&logo=plotly&logoColor=white)
 
-Bu proje, modern web geliştirme standartlarına uygun olarak şu teknolojilerle inşa edilmiştir:
+**Bireysel Proje**
 
-* **React (v18+):** Kullanıcı arayüzünü bileşen (component) tabanlı bir mimariyle yönetmek için kullanılan temel kütüphanedir.
-* **Vite:** Geleneksel Webpack kurulumlarına göre çok daha hızlı derleme süresi ve geliştirme deneyimi sunan modern yapılandırma aracıdır.
-* **CSS Modules:** Her bileşene özel (`.module.css`) stil dosyaları oluşturarak, stil çakışmalarını önleyen ve CSS kapsamını (scope) modüler hale getiren stil yönetim sistemidir.
-* **JavaScript (ES6+):** Uygulama mantığı ve veri işleme süreçleri için kullanılan modern programlama dili.
-* **Hooks (useState, useEffect, vb.):** Bileşen durumlarını yönetmek, yan etkileri (API istekleri, veri güncelleme vb.) kontrol etmek için kullanılan React özellikleri.
+Metin verileri üzerinde duygu analizi gerçekleştirerek sonuçları etkileşimli grafikler ve dashboard bileşenleri ile görselleştiren uygulama.
 
-## 📂 Mimari Yapı
+</div>
 
-Proje, temiz kod (clean code) prensiplerine göre yapılandırılmıştır:
+---
+
+# 📖 Proje Hakkında
+
+Sentiment Dashboard, kullanıcı tarafından girilen veya veri kaynağından alınan metinlerin duygu analizini gerçekleştirerek sonuçları görsel olarak sunmayı amaçlayan bir veri analizi uygulamasıdır.
+
+Proje kapsamında doğal dil işleme (NLP) teknikleri kullanılarak metinler ön işleme adımlarından geçirilmekte, duygu sınıflandırması yapılmakta ve elde edilen sonuçlar etkileşimli grafikler ile analiz edilmektedir.
+
+Dashboard yapısı sayesinde kullanıcılar duygu dağılımlarını, sınıf oranlarını ve analiz sonuçlarını tek bir ekrandan inceleyebilmektedir.
+
+---
+
+# 🎯 Proje Amaçları
+
+- Metin verilerinin duygu analizini gerçekleştirmek
+- NLP ön işleme adımlarını uygulamak
+- Duygu sınıflandırma sonuçlarını görselleştirmek
+- Kullanıcı dostu bir analiz paneli oluşturmak
+- Veri odaklı karar süreçlerini desteklemek
+
+---
+
+# ⚙️ Proje Akışı
 
 ```text
-src/
-├── 🧩 components/     # UI: SentimentChart, ResultCard, Chatbot...
-├── 🔗 hooks/          # Özel React kancaları ve veri akış yönetimi
-├── 🎨 styles/         # Global ve ortak stil dosyaları
-├── 🛠 utils/          # LLM servisleri ve yardımcı algoritmalar
-└── ⚛️ App.jsx         # Uygulamanın kalbi,
+Metin Verisi
+      │
+      ▼
+Veri Ön İşleme
+      │
+      ▼
+Tokenization
+      │
+      ▼
+Stop Words Temizleme
+      │
+      ▼
+Metin Vektörleştirme
+      │
+      ▼
+Duygu Analizi Modeli
+      │
+      ▼
+Tahmin
+      │
+      ▼
+Dashboard
+      │
+      ▼
+Grafikler & İstatistikler
+```
 
-## 📊 Özellikler ve Bileşen İşlevleri
+---
 
-1.  **CommentInput**: Kullanıcının metin girdiği ana form alanı.
-2.  **ResultCard**: Analiz sonucunun özetlendiği, görsel olarak vurgulanan bilgi kartı.
-3.  **SentimentChart**: Duygu dağılımını (yüzdelik dilimler halinde) gösteren görselleştirme aracı.
-4.  **StatsBar**: Uygulamanın anlık genel istatistiklerini (toplam analiz, ortalama skor vb.) gösteren panel.
-5.  **HistoryList**: Yapılan geçmiş analizlerin kaydını tutan ve erişim sağlayan liste bileşeni.
-6.  **ErrorBanner**: API hataları veya geçersiz giriş durumlarında kullanıcıya geri bildirim veren uyarı sistemi.
+# 📂 Proje Yapısı
 
-## ⚙️ Kurulum ve Başlatma
+```text
+Sentiment Dashboard/
+│
+├── Data
+├── Models
+├── Dashboard
+├── Visualization
+├── NLP Pipeline
+├── Notebook
+├── requirements.txt
+└── README.md
+```
 
-1.  **Depoyu Klonlayın:**
-    `git clone <proje-linkiniz>`
+---
 
-2.  **Dizine Girin:**
-    `cd Sentiment-Dashboard`
+# ✨ Özellikler
 
-3.  **Paketleri Yükleyin:**
-    `npm install`
+- 📝 Metin duygu analizi
+- 📊 Dashboard üzerinden sonuç görüntüleme
+- 📈 Grafik tabanlı analizler
+- 📉 Duygu dağılımı istatistikleri
+- 📋 Veri ön işleme süreci
+- 📂 Veri yükleme ve analiz
+- ⚡ Etkileşimli kullanıcı arayüzü
 
-4.  **Geliştirme Sunucusunu Başlatın:**
-    `npm run dev`
+---
+
+# 🛠️ Kullanılan Teknolojiler
+
+| Teknoloji | Kullanım Amacı |
+|-----------|----------------|
+| 🐍 Python | Uygulama geliştirme |
+| 📚 NLTK | Metin ön işleme |
+| 🤖 Scikit-Learn | Makine öğrenmesi modelleri |
+| 🐼 Pandas | Veri analizi |
+| 🔢 NumPy | Sayısal işlemler |
+| 📈 Plotly | Etkileşimli grafikler |
+| 🎨 Matplotlib | Veri görselleştirme |
+| 📊 Seaborn | İstatistiksel grafikler |
+| 🚀 Streamlit | Dashboard geliştirme |
+
+---
+
+# 📊 Dashboard Bileşenleri
+
+Dashboard içerisinde aşağıdaki analiz ekranları yer almaktadır.
+
+- Duygu dağılım grafikleri
+- Pozitif / Negatif / Nötr analizleri
+- Veri özet istatistikleri
+- Grafik tabanlı raporlar
+- Etkileşimli filtreleme
+- Analiz sonuçlarının görselleştirilmesi
+
+---
+
+# 🚀 Kurulum
+
+Projeyi klonlayın.
+
+```bash
+git clone https://github.com/sevval-345/Softito.git
+```
+
+İlgili dizine geçin.
+
+```bash
+cd ai-engineering/Sentiment Dashboard(Bireysel_Proje)
+```
+
+Gerekli kütüphaneleri yükleyin.
+
+```bash
+pip install -r requirements.txt
+```
+
+Dashboard uygulamasını başlatın.
+
+```bash
+streamlit run app.py
+```
+
+---
+
+# 💡 Not
+
+Bu proje, doğal dil işleme ve veri görselleştirme tekniklerini bir araya getirerek duygu analizi sonuçlarını kullanıcı dostu bir dashboard üzerinden sunmayı amaçlayan bireysel bir çalışmadır. Duygu analizi uygulamalarında ön işleme, sınıflandırma ve görselleştirme adımlarının tek bir platformda birleştirilmesi hedeflenmiştir.
+
+---
+
+<div align="center">
+
+### ⭐ Projeyi faydalı bulduysanız yıldız vermeyi unutmayın.
+
+**Geliştiren:** **Şevval Mıkçı**
+
+</div>
