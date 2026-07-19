@@ -317,10 +317,6 @@ ai-engineering/
   <img src="https://img.shields.io/badge/SQL-336791?style=for-the-badge&logo=postgresql&logoColor=white"/>
 </p>
 
-- Python 3.8+
-- JavaScript (ES6+)
-- SQL
-- Bash
 
 ---
 
@@ -333,11 +329,6 @@ ai-engineering/
   <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white"/>
 </p>
 
-- Scikit-learn
-- TensorFlow / Keras
-- PyTorch
-- NumPy
-- Pandas
 
 ---
 
@@ -350,11 +341,6 @@ ai-engineering/
   <img src="https://img.shields.io/badge/BERT-GPT-blueviolet?style=for-the-badge"/>
 </p>
 
-- NLTK
-- spaCy
-- HuggingFace Transformers
-- BERT / GPT
-
 ---
 
 ## 🔀 Veri İşleme
@@ -366,10 +352,6 @@ ai-engineering/
   <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white"/>
 </p>
 
-- Apache Airflow
-- Apache Spark
-- Pandas
-- SQL
 
 ---
 
@@ -383,12 +365,6 @@ ai-engineering/
   <img src="https://img.shields.io/badge/Seaborn-4C72B0?style=for-the-badge"/>
 </p>
 
-- OpenCV
-- Pillow
-- scikit-image
-- Matplotlib
-- Seaborn
-
 ---
 
 ## 🚀 Backend & DevOps
@@ -398,11 +374,7 @@ ai-engineering/
   <img src="https://img.shields.io/badge/Docker%20Compose-2496ED?style=for-the-badge&logo=docker&logoColor=white"/>
 </p>
 
-- Docker
-- Docker Compose
-- FastAPI
-- Flask
-- Nginx
+
 
 ---
 
@@ -412,9 +384,6 @@ ai-engineering/
   <img src="https://skillicons.dev/icons?i=react,vite,css" />
 </p>
 
-- React 18+
-- Vite
-- CSS Modules
 
 ---
 
@@ -423,10 +392,6 @@ ai-engineering/
 <p>
   <img src="https://skillicons.dev/icons?i=postgres,mongodb,sqlite" />
 </p>
-
-- PostgreSQL
-- MongoDB
-- SQLite
 
 
 ---
