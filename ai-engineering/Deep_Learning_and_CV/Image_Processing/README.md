@@ -92,10 +92,14 @@ Proje boyunca elde edilen temel analizler ve görsel sonuçlar aşağıdadır:
 | **PCA & t-SNE** | ![Dağılım](outputs/14_pca_2d_dagilim.png) <br> ![t-SNE](outputs/15_tsne_haritasi.png) |
 | **Konvolüsyon** | ![Kernel](outputs/16_konvolusyon_ornekleri.png) |
 | **Model Başarısı** | ![Matrix](outputs/18_mlp_confusion_matrix.png) <br> ![Kıyas](outputs/19_model_karsilastirma.png) |
-## 📌 Önemli Notlar
 
-- Konvolüsyon ve CNN tamamen **sıfırdan NumPy** ile yazılmıştır
-- Isı haritası **occlusion sensitivity** yöntemi kullanılarak oluşturulmuş
-- Çok sınıflı sınıflandırmaya kolaylıkla uyarlanabilir
+🔍 Çıktı Yorumları ve Analizler
+Elde edilen deneysel sonuçlar, görüntü işleme ve derin öğrenme pipeline'ımızın performansını şu şekilde doğrulamaktadır:
 
-*Bu repo, görüntü işleme pipeline'larını girişten sonuca kadar anlamak isteyenler için bir başvuru kaynağıdır.*
+PCA ile Boyut İndirgeme: PCA sonuçları, plaka verisinin sahip olduğu varyansın büyük bir kısmının ilk 50 bileşen ile açıklanabildiğini göstermektedir. Bu, modelin gereksiz yüksek boyutlu verilerden arındırılarak daha verimli eğitilmesine olanak tanır.
+
+Özellik Uzayı Analizi: PCA ve t-SNE görselleştirmeleri, "plaka" ve "plaka-değil" sınıflarının özellik uzayında belirli bir ayrışma eğiliminde olduğunu kanıtlamaktadır.
+
+Konvolüsyon İşlemleri: Manuel uygulanan Sobel çekirdekleri, görüntülerdeki kenar ve yapısal bilgilerin derin öğrenme modelleri tarafından nasıl ayırt edilebileceğinin temelini oluşturmaktadır.
+
+Model Performansı: Test seti üzerindeki karşılaştırmalarda SVM ve MLP modelleri yüksek doğruluk ve hassasiyet skorlarına ulaşmıştır. MLP, karışıklık matrisi verilerine göre başarılı bir sınıflandırma performansı sergilemiştir.
