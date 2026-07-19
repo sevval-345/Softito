@@ -1,187 +1,182 @@
 <div align="center">
 
-# 🧠 LLM Engineering & Advanced NLP
+# 🧠 LLM Engineering & Gelişmiş NLP Pipeline
 
-### Building Modern Large Language Model Systems from Fundamentals to Production
+### Büyük Dil Modellerini (LLM) Temellerden Üretim Ortamına Kadar Uçtan Uca Öğrenme Yolculuğu
 
-[![Python](https://img.shields.io/badge/Python-3.10+-3776AB?logo=python&logoColor=white)]()
-[![PyTorch](https://img.shields.io/badge/PyTorch-Deep%20Learning-EE4C2C?logo=pytorch&logoColor=white)]()
-[![Transformers](https://img.shields.io/badge/HuggingFace-Transformers-FFD21E?logo=huggingface&logoColor=black)]()
-[![FastAPI](https://img.shields.io/badge/FastAPI-API-009688?logo=fastapi)]()
-[![Docker](https://img.shields.io/badge/Docker-Container-2496ED?logo=docker&logoColor=white)]()
-[![License](https://img.shields.io/badge/License-MIT-success)]()
+![Python](https://img.shields.io/badge/Python-3.10+-3776AB?logo=python&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?logo=pytorch&logoColor=white)
+![Transformers](https://img.shields.io/badge/HuggingFace-Transformers-FFD21E?logo=huggingface&logoColor=black)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
 
----
-
-**End-to-End LLM Engineering • Transformer Architecture • Fine-Tuning • Quantization • RLHF • Production Deployment**
+**Transformer • Fine-Tuning • Quantization • RLHF • Mikroservis Mimarisi**
 
 </div>
 
 ---
 
-# 📖 Overview
+# 📖 Proje Hakkında
 
-This repository provides a comprehensive engineering journey covering the complete lifecycle of **Large Language Models (LLMs)**.
+Bu depo, **Modern Doğal Dil İşleme (NLP)** ve **Büyük Dil Modelleri (LLM)** üzerine hazırlanmış kapsamlı bir mühendislik çalışmasıdır.
 
-Unlike repositories focusing only on model training, this project explores how modern LLM systems are **designed, optimized, aligned and deployed** in production environments.
+Amaç yalnızca bir modeli eğitmek değil; bir LLM'nin **nasıl geliştirildiğini, optimize edildiğini, hizalandığını ve üretim ortamına taşındığını** uçtan uca anlamaktır.
 
-The repository progresses from **classical Natural Language Processing** concepts to **Transformer architectures**, **parameter-efficient fine-tuning**, **model optimization**, **alignment techniques**, and finally **microservice-based deployment**.
+Projeler, klasik NLP yöntemlerinden başlayarak Transformer mimarisi, Fine-Tuning, Quantization, RLHF ve mikroservis tabanlı dağıtıma kadar modern LLM ekosistemini kapsamaktadır.
 
 ---
 
-# 🏛 Repository Architecture
+# 🏛️ Öğrenme Yol Haritası
 
 ```text
-                    Large Language Models
+                 Büyük Dil Modelleri (LLM)
 
-                           │
-         ┌─────────────────┼──────────────────┐
-         │                 │                  │
-      NLP Basics      Transformer        Deployment
-         │                 │                  │
- Text Processing     Self Attention     FastAPI APIs
- TF-IDF              Encoder            Docker
- Word2Vec            Decoder            Gateway
-         │                 │                  │
-         └──────────────┬─────────────────────┘
+                         │
+        ┌────────────────┼────────────────┐
+        │                │                │
+     NLP Temelleri   Transformer      Deployment
+        │                │                │
+   TF-IDF, Word2Vec  Self-Attention   FastAPI
+        │                │            Docker
+        └───────────────┬────────────────┘
                         │
-                  Fine-Tuning
+                 Fine-Tuning (PEFT)
                         │
-                Quantization
+                  Quantization
                         │
-                 RLHF & DPO
+                    RLHF & DPO
 ```
 
 ---
 
-# 📂 Project Structure
+# 📂 Proje Modülleri
 
-| Module | Description | Engineering Focus |
-|:--|:--|:--|
-| **01 NLP Basics** | Text preprocessing | Tokenization, Cleaning |
-| **02 BoW & N-Gram** | Classical NLP | Feature Engineering |
-| **03 Word Embeddings** | Distributed Representations | Word2Vec |
-| **04 Transformer** | Transformer Architecture | Encoder–Decoder |
-| **05 Self Attention** | Attention Mechanism | Query, Key, Value |
-| **06 Autoregressive Generation** | Text Generation | Greedy Search, Temperature |
-| **07 Fine-Tuning** | Transfer Learning | PEFT, LoRA |
-| **08 Quantization** | Model Optimization | INT8 / 4-bit |
-| **09 RLHF & DPO** | Alignment | Preference Optimization |
-| **10 Microservices** | Production Serving | FastAPI + Docker |
+| Modül | Konu | Kazanım |
+|:------|:-----|:---------|
+| **01-03 NLP Basics** | Metin Ön İşleme | Tokenization, TF-IDF, Word2Vec |
+| **04 Transformer** | Transformer Mimarisi | Encoder, Decoder, Multi-Head Attention |
+| **05 Self-Attention** | Attention Mekanizması | Query, Key, Value hesaplamaları |
+| **06 Autoregression** | Metin Üretimi | Temperature Sampling, Greedy Search |
+| **07 Fine-Tuning** | Transfer Learning | PEFT, LoRA, Hugging Face Trainer |
+| **08 Quantization** | Model Optimizasyonu | INT8, 4-bit Quantization |
+| **09 RLHF & DPO** | Model Hizalama | İnsan tercihleri ile optimizasyon |
+| **10 Microservices** | Üretim Ortamı | FastAPI, REST API, Docker |
 
 ---
 
-# ⚙ Engineering Pipeline
+# ⚙️ Mühendislik Pipeline'ı
 
 ```text
-Raw Text
-    │
-    ▼
-Text Preprocessing
-    │
-    ▼
-Embeddings
-    │
-    ▼
-Transformer
-    │
-    ▼
-Self Attention
-    │
-    ▼
-Autoregressive Generation
-    │
-    ▼
+Ham Metin
+     │
+     ▼
+Metin Ön İşleme
+     │
+     ▼
+Embedding Oluşturma
+     │
+     ▼
+Transformer Modeli
+     │
+     ▼
+Self-Attention
+     │
+     ▼
+Metin Üretimi
+     │
+     ▼
 Fine-Tuning
-    │
-    ▼
+     │
+     ▼
 Quantization
-    │
-    ▼
+     │
+     ▼
 RLHF / DPO
-    │
-    ▼
-FastAPI Deployment
+     │
+     ▼
+FastAPI Servisi
+     │
+     ▼
+Docker ile Dağıtım
 ```
 
 ---
 
-# 🛠 Tech Stack
+# 🛠️ Kullanılan Teknolojiler
 
-## Programming
+## 💻 Programlama
 
 - Python
 
-## Deep Learning
+## 🤖 Derin Öğrenme
 
 - PyTorch
 - Hugging Face Transformers
 - PEFT
 - TRL
 
-## NLP
+## 📝 NLP
 
 - NLTK
-- spaCy
+- SpaCy
 - Scikit-Learn
 
-## Model Optimization
+## ⚡ Model Optimizasyonu
 
 - LoRA
 - QLoRA
 - BitsAndBytes
 - Quantization
-- Mixed Precision
 
-## Backend
+## 🌐 Backend
 
 - FastAPI
 - REST API
 
-## DevOps
+## ☁️ DevOps
 
 - Docker
 
 ---
 
-# 🧩 Core Engineering Topics
+# 🧩 Öğrenilen Konular
 
-## Natural Language Processing
+### 📌 NLP
 
 - Text Cleaning
 - Tokenization
-- Lemmatization
 - Stopword Removal
+- Lemmatization
 - TF-IDF
 - N-Gram
 - Word2Vec
 
 ---
 
-## Transformer Architecture
+### 📌 Transformer
 
 - Positional Encoding
 - Multi-Head Attention
-- Feed Forward Networks
-- Residual Connections
+- Feed Forward Network
+- Residual Connection
 - Layer Normalization
 - Encoder
 - Decoder
 
 ---
 
-## Large Language Models
+### 📌 LLM
 
 - Autoregressive Generation
 - Temperature Sampling
 - Top-K Sampling
 - Top-P Sampling
+- Greedy Search
 - Beam Search
-- Logits Processing
 
 ---
 
-## Fine-Tuning
+### 📌 Fine-Tuning
 
 - Transfer Learning
 - PEFT
@@ -191,108 +186,115 @@ FastAPI Deployment
 
 ---
 
-## Optimization
+### 📌 Model Optimizasyonu
 
 - Quantization
-- Mixed Precision
-- Memory Optimization
-- VRAM Reduction
-- Low-bit Inference
+- Bellek Optimizasyonu
+- Düşük Bitli Model Çalıştırma
+- VRAM Optimizasyonu
 
 ---
 
-## Alignment
+### 📌 Model Hizalama
 
 - RLHF
 - DPO
-- Human Preference Learning
 - Reward Modeling
+- Preference Learning
 
 ---
 
-## Production
+### 📌 Production AI
 
 - FastAPI
 - REST API
 - Docker
 - API Gateway
-- Model Serving
-- Scalable Deployment
+- Mikroservis Mimarisi
+- Ölçeklenebilir Model Servisi
 
 ---
 
-# 🎯 Learning Outcomes
+# 🎯 Bu Depodan Neler Öğreneceksiniz?
 
-After completing this repository you will understand:
+Bu projeyi tamamladıktan sonra;
 
-- Classical NLP techniques
-- Transformer architecture from scratch
-- Self-Attention mathematics
-- Large Language Model inference
-- Fine-tuning modern LLMs
-- PEFT methods
-- LoRA & QLoRA
-- Quantization techniques
-- RLHF and DPO
-- Production-ready LLM deployment
-- FastAPI serving architecture
-- Docker-based deployment
+✅ Klasik NLP yöntemlerini
+
+✅ Transformer mimarisini
+
+✅ Self-Attention mekanizmasını
+
+✅ Büyük Dil Modellerinin çalışma mantığını
+
+✅ Fine-Tuning süreçlerini
+
+✅ PEFT ve LoRA tekniklerini
+
+✅ Quantization yöntemlerini
+
+✅ RLHF ve DPO ile model hizalamayı
+
+✅ FastAPI ile LLM servisleri geliştirmeyi
+
+✅ Docker ile üretim ortamına dağıtımı öğrenmiş olacaksınız.
 
 ---
 
-# 🚀 Getting Started
+# 🚀 Kurulum
 
-Clone the repository
+Projeyi klonlayın
 
 ```bash
-git clone https://github.com/username/LLM-Engineering.git
+git clone https://github.com/kullaniciadi/LLM-Engineering.git
 
 cd LLM-Engineering
 ```
 
-Install dependencies
+Bağımlılıkları yükleyin
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Run notebooks individually according to the learning path.
+Ardından notebookları sırasıyla çalıştırarak öğrenme yolunu takip edebilirsiniz.
 
 ---
 
-# 📈 Engineering Philosophy
+# 💡 Mühendislik Yaklaşımı
 
-This repository follows a **System-Centric AI Engineering** approach rather than a **Model-Centric** perspective.
+Bu depo **Model Odaklı** değil, **Sistem Odaklı Yapay Zekâ Mühendisliği** yaklaşımını benimsemektedir.
 
-The objective is not only to train language models but also to understand how modern AI systems are:
+Odak noktası yalnızca model eğitmek değildir.
 
-- Designed
-- Optimized
-- Fine-tuned
-- Evaluated
-- Aligned
-- Served
-- Scaled
+Bir LLM'nin;
 
-for real-world production environments.
+- Nasıl geliştirildiği,
+- Nasıl optimize edildiği,
+- Nasıl ince ayar (Fine-Tuning) yapıldığı,
+- Nasıl hizalandığı,
+- Nasıl API olarak sunulduğu,
+- Nasıl ölçeklendirildiği
+
+adım adım ele alınmaktadır.
 
 ---
 
-# 📚 References
+# 📚 Kaynaklar
 
 - Attention Is All You Need
 - Hugging Face Transformers
-- PEFT
-- TRL
 - PyTorch Documentation
+- PEFT Documentation
+- TRL Documentation
 - FastAPI Documentation
 
 ---
 
 <div align="center">
 
-### ⭐ If you find this repository useful, consider giving it a star.
+### ⭐ Projeyi faydalı bulduysanız yıldız vermeyi unutmayın.
 
-**Made with ❤️ by Şevval Mıkçı**
+**Geliştiren:** **Şevval Mıkçı**
 
 </div>
