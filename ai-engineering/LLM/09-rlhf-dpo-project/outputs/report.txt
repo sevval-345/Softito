@@ -1,0 +1,11 @@
+RLHF vs DPO DEMO RAPORU
+========================================
+Ödül modeli doğruluğu: 70.0%
+
+Metrik                                    Referans        RLHF         DPO
+Beklenen gerçek kalite                     -0.1215      0.4407      0.2474
+KL uzaklığı                                 0.0000      0.7346      0.2278
+En iyi cevabı bulma oranı                   0.4000      0.4000      0.4000
+
+RLHF ödül modeli <-> DPO örtük ödülü korelasyonu: 0.9779
+RLHF politikası <-> DPO politikası ort. mutlak fark: 0.0871

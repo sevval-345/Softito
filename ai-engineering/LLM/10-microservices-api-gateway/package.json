@@ -1,0 +1,16 @@
+{
+  "name": "microservices-project",
+  "version": "1.0.0",
+  "description": "API Gateway + Auth Service + Product Service mikroservis mimarisi",
+  "private": true,
+  "scripts": {
+    "install:all": "npm install --prefix api-gateway && npm install --prefix auth-service && npm install --prefix product-service",
+    "start:gateway": "npm start --prefix api-gateway",
+    "start:auth": "npm start --prefix auth-service",
+    "start:product": "npm start --prefix product-service",
+    "start": "concurrently -n GATEWAY,AUTH,PRODUCT -c blue,green,yellow \"npm run start:gateway\" \"npm run start:auth\" \"npm run start:product\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

@@ -1,0 +1,15 @@
+KUANTİZASYON DEMO RAPORU
+========================================
+
+[SYMMETRIC]
+  scale=0.017725  zero_point=0
+  MSE=0.00002619  SQNR=39.79 dB
+  Bellek: 262,144 B -> 65,536 B (4.00x sıkıştırma)
+
+[ASYMMETRIC]
+  scale=0.016792  zero_point=134
+  MSE=0.00002340  SQNR=40.28 dB
+  Bellek: 262,144 B -> 65,536 B (4.00x sıkıştırma)
+
+[MODEL ÇIKTISI ÜZERİNDE ETKİ]
+  Göreli L2 hata: 1.303%

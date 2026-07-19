@@ -1,0 +1,28 @@
+version: "3.9"
+
+services:
+  ml-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: titanic-ml-app
+    ports:
+      - "8501:8501"           # Streamlit dashboard
+    volumes:
+      - ml-models:/app/models # Eğitilmiş modeller kalıcı saklansın
+      - ml-data:/app/data     # İndirilen veri seti kalıcı saklansın
+    environment:
+      - PYTHONUNBUFFERED=1
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8501/_stcore/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s   # İlk eğitime zaman tanı
+
+volumes:
+  ml-models:
+    driver: local
+  ml-data:
+    driver: local
