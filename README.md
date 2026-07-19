@@ -427,135 +427,6 @@ node >= 14.0
 npm >= 6.0
 ```
 
-### ⚡ Temel Kurulum Adımları
-
-#### 1️⃣ Repository'yi Klonla
-```bash
-git clone https://github.com/sevval-345/Softito.git
-cd Softito/ai-engineering
-```
-
-#### 2️⃣ Virtual Environment Oluştur
-```bash
-python -m venv venv
-source venv/bin/activate  # Linux/Mac
-# veya
-venv\Scripts\activate  # Windows
-```
-
-#### 3️⃣ Bağımlılıkları Yükle
-```bash
-# İhtiyaca göre gerekli paketleri yükle
-pip install -r requirements.txt
-```
-
-#### 4️⃣ Jupyter Notebook Başlat
-```bash
-jupyter notebook
-```
-
-### 💡 Örnek Projelerle Başlangıç
-
-#### 📝 NLP İle Metin Analizi
-```bash
-cd NLP/
-jupyter notebook 01-NLP_Giriş.ipynb
-```
-
-#### 🤖 Transformer Modeli Anlamak
-```bash
-cd LLM/
-python 04-Transformer.py
-```
-
-#### 🐱 Görüntü Sınıflandırması
-```bash
-cd Machine_Learning/classification/
-jupyter notebook "Cats & Dogs Classification.ipynb"
-```
-
----
-
-## 💡 Proje Örnekleri
-
-### 1️⃣ Sentiment Dashboard (Bireysel Proje)
-
-**📝 Açıklama:** React tabanlı, metin duygusal analizini gerçek zamanlı yapan web uygulaması.
-
-**✨ Özellikler:**
-- ✓ Metin girdisi al ve duygusal analiz yapma
-- ✓ Sonuçları görsel kartlar halinde gösterme
-- ✓ Duygu dağılımı grafiği
-- ✓ Geçmiş analizler kütüphanesi
-- ✓ İstatistik paneli
-
-**🛠️ Teknoloji Stack:**
-- React 18+ (UI)
-- Vite (build tool)
-- CSS Modules (styling)
-- LLM integration (backend)
-
-**🎬 Başlatma:**
-```bash
-cd Sentiment\ Dashboard\(Bireysel_Proje\)/
-npm install
-npm run dev
-```
-
-### 2️⃣ Satış Tahmin Sistemi (Docker)
-
-**📊 Açıklama:** Satışları tahmin eden ML modelini Docker konteynerinde çalıştıran sistem.
-
-**🏗️ Mimarisi:**
-- **ML Service:** Model ve tahmin motor
-- **Web Dashboard:** Sonuç gösterimi
-- **Scraper:** Veri toplama
-- **Database:** Veri saklama
-
-**🎬 Başlatma:**
-```bash
-cd Docker/Sales-Prediction-api-Docker-main/
-docker-compose up -d
-# http://localhost:3000 adresinde erişin
-```
-
-### 3️⃣ Transformer Mimarisi (Sıfırdan Uygulama)
-
-**🧠 Açıklama:** NumPy kullanarak Transformer mimarisinin temel bileşenlerini uygulayan eğitim projesi.
-
-**📚 Öğrenilen Kavramlar:**
-- Tokenization ve Embedding
-- Self-Attention mekanizması
-- Multi-Head Attention
-- Feed-Forward Networks
-- Residual bağlantıları
-- Layer Normalization
-- Sınıflandırma katmanı
-
-**▶️ Çalıştırma:**
-```bash
-cd LLM/
-python 04-Transformer.py
-# Çıktı transformer_output.txt dosyasına kaydedilir
-```
-
-### 4️⃣ Plaka Tanıma Sistemi
-
-**🎯 Açıklama:** Görüntü işleme ve derin öğrenme kullanarak plaka tanıma.
-
-**🔧 Bileşenler:**
-- Görüntü ön işleme (normalize, threshold)
-- Bölge tespiti (contour detection)
-- Karakter segmentasyonu
-- OCR (Optical Character Recognition)
-
-**▶️ Çalıştırma:**
-```bash
-cd Deep_Learning_and_CV/Image_Processing/
-python plaka_pipeline.py --input image.jpg
-```
-
----
 
 ## 🌐 Sistem Mimarisi
 
@@ -779,14 +650,6 @@ Bu proje MIT Lisansı altında lisanslanmıştır. Detaylar için `LICENSE` dosy
 
 ---
 
-## 📧 İletişim ve Destek
-
-**👤 Proje Sahibi:** sevval-345
-
-**❓ Sorular ve Öneriler:**
-- 🐛 GitHub Issues üzerinden bug raporlayın
-- 💬 Discussions kısmında soru sorun
-- 🔄 Pull Request ile katkıda bulunun
 
 ---
 
@@ -794,9 +657,5 @@ Bu proje MIT Lisansı altında lisanslanmıştır. Detaylar için `LICENSE` dosy
 
 Bu modül sürekli geliştirilmekte ve güncellenmektedir. En son değişiklikler için `CHANGELOG.md` dosyasını kontrol edin.
 
-**⏰ Son Güncelleme:** 2024
 
 ---
-
-**📍 Sürüm:** 1.0.0  
-**🟢 Durum:** Aktif Geliştirme
