@@ -83,7 +83,15 @@ pip3 install opencv-python scikit-learn matplotlib numpy pillow scipy
 ```
 
 ---
+## 🚀 Çıktılar ve Analizler
 
+Proje boyunca elde edilen temel analizler ve görsel sonuçlar aşağıdadır:
+
+| Analiz Türü | Görsel |
+| :--- | :--- |
+| **PCA & t-SNE** | ![Dağılım](outputs/14_pca_2d_dagilim.png) <br> ![t-SNE](outputs/15_tsne_haritasi.png) |
+| **Konvolüsyon** | ![Kernel](outputs/16_konvolusyon_ornekleri.png) |
+| **Model Başarısı** | ![Matrix](outputs/18_mlp_confusion_matrix.png) <br> ![Kıyas](outputs/19_model_karsilastirma.png) |
 ## 📌 Önemli Notlar
 
 - Konvolüsyon ve CNN tamamen **sıfırdan NumPy** ile yazılmıştır
