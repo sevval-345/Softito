@@ -644,18 +644,5 @@ pyspark>=3.2.0
 
 ---
 
-## 📄 Lisans
-
-Bu proje MIT Lisansı altında lisanslanmıştır. Detaylar için `LICENSE` dosyasını kontrol edin.
-
----
-
-
----
-
-## 📌 Notu
-
-Bu modül sürekli geliştirilmekte ve güncellenmektedir. En son değişiklikler için `CHANGELOG.md` dosyasını kontrol edin.
-
 
 ---
