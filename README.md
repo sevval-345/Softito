@@ -308,55 +308,126 @@ ai-engineering/
   - Database: Veri depolama
 
 ---
+# 🛠️ Kullanılan Teknolojiler
 
-## 🛠️ Kullanılan Teknolojiler
+## 💻 Programlama Dilleri
 
-### 💻 Programlama Dilleri
-- **Python 3.8+** - Tüm AI/ML projeleri
-- **JavaScript (ES6+)** - Frontend (React)
-- **SQL** - Veritabanı sorguları
-- **Bash** - Container scripts
+<p>
+  <img src="https://skillicons.dev/icons?i=python,js,bash" />
+  <img src="https://img.shields.io/badge/SQL-336791?style=for-the-badge&logo=postgresql&logoColor=white"/>
+</p>
 
-### 🧠 Makine Öğrenmesi Framework'leri
-- **scikit-learn** - Klasik ML algoritmaları
-- **TensorFlow/Keras** - Derin öğrenme
-- **PyTorch** - Alternatif derin öğrenme framework'ü
-- **NumPy** - Sayısal hesaplamalar
-- **Pandas** - Veri manipülasyonu
+- Python 3.8+
+- JavaScript (ES6+)
+- SQL
+- Bash
 
-### 📚 NLP Kütüphaneleri
-- **NLTK** - Doğal dil işleme araçları
-- **spaCy** - Modern NLP
-- **Transformers (HuggingFace)** - Önceden eğitilmiş modeller
-- **BERT/GPT** - Transfer learning
+---
 
-### 🔀 Veri İşleme
-- **Apache Airflow** - İş akışı orkestrasyon
-- **Apache Spark** - Dağıtık veri işleme
-- **Pandas** - Veri analizi ve manipülasyonu
-- **SQL** - Veritabanı işlemleri
+## 🧠 Makine Öğrenmesi
 
-### 🖼️ Görüntü İşleme
-- **OpenCV** - Bilgisayar görme kütüphanesi
-- **PIL/Pillow** - Görüntü manipülasyonu
-- **scikit-image** - Gelişmiş görüntü işleme
-- **Matplotlib/Seaborn** - Görselleştirme
+<p>
+  <img src="https://skillicons.dev/icons?i=tensorflow,pytorch" />
+  <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white"/>
+  <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white"/>
+</p>
 
-### 🚀 Deployment ve DevOps
-- **Docker** - Konteynerizasyon
-- **Docker Compose** - Multi-container yönetimi
-- **Nginx** - Web sunucusu
-- **Flask/FastAPI** - Python web framework'leri
+- Scikit-learn
+- TensorFlow / Keras
+- PyTorch
+- NumPy
+- Pandas
 
-### 🎨 Frontend Teknolojileri
-- **React 18+** - UI library
-- **Vite** - Build tool
-- **CSS Modules** - Stil yönetimi
+---
 
-### 🗄️ Veritabanları
-- **PostgreSQL** - İlişkisel veritabanı
-- **MongoDB** - NoSQL seçeneği
-- **SQLite** - Hafif veritabanı
+## 📚 Doğal Dil İşleme (NLP)
+
+<p>
+  <img src="https://img.shields.io/badge/NLTK-4CAF50?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/spaCy-09A3D5?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/HuggingFace-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black"/>
+  <img src="https://img.shields.io/badge/BERT-GPT-blueviolet?style=for-the-badge"/>
+</p>
+
+- NLTK
+- spaCy
+- HuggingFace Transformers
+- BERT / GPT
+
+---
+
+## 🔀 Veri İşleme
+
+<p>
+  <img src="https://skillicons.dev/icons?i=postgres" />
+  <img src="https://img.shields.io/badge/Apache%20Airflow-017CEE?style=for-the-badge&logo=apacheairflow&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Apache%20Spark-E25A1C?style=for-the-badge&logo=apachespark&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white"/>
+</p>
+
+- Apache Airflow
+- Apache Spark
+- Pandas
+- SQL
+
+---
+
+## 🖼️ Görüntü İşleme
+
+<p>
+  <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Pillow-3776AB?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/scikit--image-F7931E?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Seaborn-4C72B0?style=for-the-badge"/>
+</p>
+
+- OpenCV
+- Pillow
+- scikit-image
+- Matplotlib
+- Seaborn
+
+---
+
+## 🚀 Backend & DevOps
+
+<p>
+  <img src="https://skillicons.dev/icons?i=docker,fastapi,flask,nginx" />
+  <img src="https://img.shields.io/badge/Docker%20Compose-2496ED?style=for-the-badge&logo=docker&logoColor=white"/>
+</p>
+
+- Docker
+- Docker Compose
+- FastAPI
+- Flask
+- Nginx
+
+---
+
+## 🎨 Frontend
+
+<p>
+  <img src="https://skillicons.dev/icons?i=react,vite,css" />
+</p>
+
+- React 18+
+- Vite
+- CSS Modules
+
+---
+
+## 🗄️ Veritabanları
+
+<p>
+  <img src="https://skillicons.dev/icons?i=postgres,mongodb,sqlite" />
+</p>
+
+- PostgreSQL
+- MongoDB
+- SQLite
+
 
 ---
 
